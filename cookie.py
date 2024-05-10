@@ -3,11 +3,11 @@ import sys
 import keyboard
 
 
-# while True:
-#     if keyboard.read_key('q'):
-#         sys.exit()
-#     else:
-#         pyautogui.click(291,386)
+while True:
+    if keyboard.is_pressed('q'):
+        break
+    else:
+        pyautogui.click(291,386)
 
 # for i in range(50):
 #     if keyboard.read_key('q'):
@@ -19,8 +19,8 @@ import keyboard
 #     pyautogui.click(291,386)
 
 
-try:
-    while True:
-        pyautogui.click(291,386)
-except keyboard.read_key('q'):
-    sys.exit()
+# try:
+#     while True:
+#         pyautogui.click(291,386)
+# except KeyboardInterrupt:
+#     print('Stop')
